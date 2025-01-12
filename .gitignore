@@ -1,0 +1,17 @@
+# Derleme çıktıları
+*.class
+*.jar
+*.war
+
+# IDE özel dosyalar
+.idea/
+
+# Log dosyaları
+log/
+out/
+
+/target/
+/web_driver
+/logs/
+logs/*
+env/
