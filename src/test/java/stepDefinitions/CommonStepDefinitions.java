@@ -100,7 +100,7 @@ public class CommonStepDefinitions {
         baseSteps.clickElement(TRANSFER_MONEY_LOGOUT_TEXT.getLocator());
     }
 
-    @Given("Check that the account has been successfully logged out")
+    @Given("User logs out")
     public void checkSuccessfullyLoggedOut() {
         logger.info("Entered.");
         baseSteps.checkIfElementExistLogCurrentText(TRANSFER_MONEY_LOGIN_BUTTON.getLocator());
@@ -172,7 +172,7 @@ public class CommonStepDefinitions {
         }
     }
 
-    @When("Verify error message is displayed for wrong card number")
+    @When("Check wrong card number text")
     public void verifyErrorMessageForInvalidCardNumber() {
         try {
             boolean isErrorDisplayed = baseSteps.isDisplayedBy(By.xpath("//div[contains(@class, 'error')]"));

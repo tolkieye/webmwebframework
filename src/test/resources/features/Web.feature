@@ -27,7 +27,7 @@ Feature:Web Feature
 
   Scenario: mweb4-UserLogout
     Given The account is successfully logged out
-    Given Check that the account has been successfully logged out
+    Given User logs out
 
 
   Scenario: mweb5-AddMoneyWithInvalidCard
@@ -36,5 +36,5 @@ Feature:Web Feature
       | Transactions My Account | Add Money | Entry Card Number | Entry Card Holder | Entry Expiry Date | Entry Cvv | Entry Add Amount | Add Complete |
       | ADD_MONEY               | True      | WrongCardNumber   | CardHolder        | ExpiryDate        | Cvv       | Amount           | True         |
     Given Click if the warning message appears on the page
-    When Verify error message is displayed for wrong card number
+    When Check wrong card number text
 
